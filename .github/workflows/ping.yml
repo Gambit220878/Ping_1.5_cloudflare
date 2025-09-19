@@ -1,13 +1,12 @@
-yaml
-name: Ping Cloudflare Scanner
-on:
-  schedule:
-    - cron: '*/3 * * * *'
-  workflow_dispatch:
-  repository_dispatch:
-jobs:
-  ping:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Ping Scanner
-        run: curl -s -H "Authorization: ${{ secrets.SECRET_KEY }}" "${{ secrets.SCANNER_URL }}"
+#1 name: Ping Cloudflare Scanner
+#2 on:
+#3   schedule:
+#4     - cron: '*/3 * * * *'
+#5   workflow_dispatch:
+#6   repository_dispatch:
+#7 jobs:
+#8   ping:
+#9     runs-on: ubuntu-latest
+#10    steps:
+#11      - name: Ping Scanner
+#12        run: curl -s -H "Authorization: ${{ secrets.SECRET_KEY }}" "${{ secrets.SCANNER_URL }}"
