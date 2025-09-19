@@ -1,6 +1,7 @@
 name: Ping Cloudflare Scanner
 
 on:
+  push:
   schedule:
     - cron: "*/3 * * * *"
   workflow_dispatch:
