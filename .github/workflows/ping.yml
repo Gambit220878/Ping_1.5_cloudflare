@@ -1,12 +1,1 @@
-#1 name: Ping Cloudflare Scanner
-#2 on:
-#3   schedule:
-#4     - cron: '*/3 * * * *'
-#5   workflow_dispatch:
-#6   repository_dispatch:
-#7 jobs:
-#8   ping:
-#9     runs-on: ubuntu-latest
-#10    steps:
-#11      - name: Ping Scanner
-#12        run: curl -s -H "Authorization: ${{ secrets.SECRET_KEY }}" "${{ secrets.SCANNER_URL }}"
+
