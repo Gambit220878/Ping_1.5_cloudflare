@@ -11,4 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Scanner
-        run: curl -s -H "Authorization: ${{ secrets.SECRET_KEY }}" "${{ secrets.SCANNER_URL }}"
+        run: |
+          curl -s -H "Authorization: ${{ secrets.SECRET_KEY }}" "${{ secrets.SCANNER_URL }}"
